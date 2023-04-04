@@ -1,4 +1,5 @@
 import BooksForm from './BooksForm';
+import Book from './Book';
 
 const Books = () => {
   const books = [
@@ -13,9 +14,7 @@ const Books = () => {
       <ul>
         {books.map((book) => (
           <li key={book.title}>
-            {book.title}
-            by
-            {book.author}
+            <Book title={book.title} author={book.author} />
           </li>
         ))}
       </ul>
