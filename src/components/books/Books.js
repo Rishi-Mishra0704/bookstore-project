@@ -1,19 +1,49 @@
+import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { removeBook } from '../../redux/book-redux/BookSlice';
+import {
+  fetchBooks,
+  selectAllBooks,
+  removeBook,
+  addBook,
+} from '../../redux/book-redux/BookSlice';
 import Book from './Book';
 import BooksForm from './BooksForm';
 
 const Books = () => {
-  const books = useSelector((state) => state.books.books);
+  const [isLoading, setIsLoading] = useState(true);
+  const books = useSelector(selectAllBooks);
   const dispatch = useDispatch();
 
-  const handleRemoveBook = (id) => {
-    dispatch(removeBook(id));
+  useEffect(() => {
+    dispatch(fetchBooks())
+      .then(() => setIsLoading(false))
+      .catch(() => setIsLoading(false));
+  }, [dispatch]);
+
+  const handleAddBook = async (book) => {
+    setIsLoading(true);
+    await dispatch(addBook(book));
+    dispatch(fetchBooks())
+      .then(() => setIsLoading(false))
+      .catch(() => setIsLoading(false));
   };
 
-  return (
-    <div>
-      <h2>Books</h2>
+  const handleRemoveBook = async (id) => {
+    setIsLoading(true);
+    await dispatch(removeBook(id));
+    dispatch(fetchBooks())
+      .then(() => setIsLoading(false))
+      .catch(() => setIsLoading(false));
+  };
+
+  let content;
+
+  if (isLoading) {
+    content = <p>Loading...</p>;
+  } else if (books.length === 0) {
+    content = <p>No books found.</p>;
+  } else {
+    content = (
       <ul>
         {books.map((book) => (
           <li key={book.item_id}>
@@ -26,8 +56,15 @@ const Books = () => {
           </li>
         ))}
       </ul>
+    );
+  }
+
+  return (
+    <div>
+      <h2>Books</h2>
+      {content}
       <h2>Add a New Book</h2>
-      <BooksForm />
+      <BooksForm onAddBook={handleAddBook} />
     </div>
   );
 };
