@@ -2,11 +2,6 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { nanoid } from '@reduxjs/toolkit';
 
-/* Important please do not remove any eslint disables as it hepls me to write
- "item_id" using underscrore  which is otherwise not possible.
- Using camelcase will throw an error. It does not send proper request to the API.
- */
-
 const BooksForm = ({ onAddBook }) => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
@@ -14,11 +9,12 @@ const BooksForm = ({ onAddBook }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // eslint-disable-next-line camelcase
-    const item_id = nanoid();
+    const newItemId = nanoid();
     onAddBook({
-      // eslint-disable-next-line camelcase
-      item_id, title, author, category,
+      item_id: newItemId,
+      title,
+      author,
+      category,
     });
     setTitle('');
     setAuthor('');
