@@ -6,14 +6,20 @@ function Book({
 }) {
   return (
     <div>
+      <p>{category}</p>
       <p>{title}</p>
       <p>
         by
         {author}
       </p>
-      <p>{category}</p>
+      <button type="button">
+        Comment
+      </button>
       <button type="button" onClick={onRemove}>
         Remove
+      </button>
+      <button type="button">
+        edit
       </button>
     </div>
   );

@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  height: 5rem;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.categories a {
+  color: #c4c4c4;
+}
+.books a {
+  color: #121212;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+.ul {
+  display: flex;
+  list-style: none;
+}
+.Bookstore-CMS {
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.profile {
+  font-size: 28px;
+  color: #0290ff;
+}
+.ul li {
+  margin: 0 20px;
+  font-size: 20px;
+}

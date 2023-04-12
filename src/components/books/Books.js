@@ -63,7 +63,6 @@ const Books = () => {
     <div>
       <h2>Books</h2>
       {content}
-      <h2>Add a New Book</h2>
       <BooksForm onAddBook={handleAddBook} />
     </div>
   );
