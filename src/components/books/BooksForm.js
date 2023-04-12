@@ -1,20 +1,31 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { nanoid } from '@reduxjs/toolkit';
-import { addBook } from '../../redux/book-redux/BookSlice';
 
-const BooksForm = () => {
+const BooksForm = ({ onAddBook }) => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const dispatch = useDispatch();
+  const [category, setCategory] = useState('fiction');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const id = nanoid();
-    dispatch(addBook({ id, title, author }));
+    const newItemId = nanoid();
+    onAddBook({
+      item_id: newItemId,
+      title,
+      author,
+      category,
+    });
     setTitle('');
     setAuthor('');
+    setCategory('');
   };
+
+  useEffect(() => {
+    setTitle('');
+    setAuthor('');
+    setCategory('fiction');
+  }, []);
 
   return (
     <form onSubmit={handleSubmit}>
@@ -46,6 +57,10 @@ const BooksForm = () => {
       <button type="submit">Add</button>
     </form>
   );
+};
+
+BooksForm.propTypes = {
+  onAddBook: PropTypes.func.isRequired,
 };
 
 export default BooksForm;
