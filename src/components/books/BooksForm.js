@@ -32,7 +32,7 @@ const BooksForm = ({ onAddBook }) => {
     <>
       <h2 className={classes['new-book']}>Add a New Book</h2>
       <form className={classes['books-form-container']} onSubmit={handleSubmit}>
-        <div>
+        <div className={classes['form-container']}>
           <label htmlFor="booksinput">
             <input
               id="booksinput"
@@ -45,7 +45,7 @@ const BooksForm = ({ onAddBook }) => {
             />
           </label>
         </div>
-        <div>
+        <div className={classes['form-container']}>
           <label htmlFor="authorInput">
             <input
               id="authorInput"

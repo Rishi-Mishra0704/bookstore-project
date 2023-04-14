@@ -21,7 +21,7 @@ function Book({
         <button className={`${classes.button} ${classes.comment}`} type="button">
           Comments
         </button>
-        <button className={`${classes.button} ${classes.comment}`} type="button" onClick={onRemove}>
+        <button className={`${classes.button} ${classes.remove}`} type="button" onClick={onRemove}>
           Remove
         </button>
         <button className={`${classes.button} ${classes.edit}`} type="button">

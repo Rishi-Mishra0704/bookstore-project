@@ -21,8 +21,8 @@ ul {
 }
 
 .title {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 900;
   color: #121212;
   font-family: "Roboto Slab", serif;
   margin-top: -8px;
@@ -50,5 +50,13 @@ ul {
 
 .comment {
   margin-right: 10px;
-  border-right: 2px solid #d4d4d4;
+}
+.remove{
+  border-left: 2px solid #d4d4d4;
+  padding-left: 10px;
+  margin-right:10px ;
+}
+.edit{
+  border-left: 2px solid #d4d4d4;
+  padding-left: 10px;
 }
