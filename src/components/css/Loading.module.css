@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
 }
+
 .circle {
   margin-top: 10px;
   border-radius: 50%;
@@ -12,6 +13,7 @@
   border-left-color: #e8e8e8;
   transform: rotate(45deg);
 }
+
 .percent {
   font-family: "Montserrat", sans-serif;
   font-size: 34px;
@@ -20,12 +22,14 @@
   border-right: 2px solid #e8e8e8;
   padding-right: 100px;
 }
+
 .text {
   color: #121212;
   font-size: 1rem;
   opacity: 0.5;
   margin-top: -15px;
 }
+
 .chapter {
   margin: 0 50px;
   margin-top: -10px;
@@ -33,11 +37,13 @@
   font-weight: 300;
   color: #121212;
 }
+
 .current {
   font-size: 0.813rem;
   opacity: 0.5;
   text-transform: uppercase;
 }
+
 .chapter-number {
   font-size: 1rem;
   letter-spacing: -0.4px;
@@ -45,8 +51,8 @@
   font-weight: 300;
   color: #121212;
   margin-top: -10px;
-
 }
+
 .btn-update {
   cursor: pointer;
   border: none;
@@ -59,6 +65,7 @@
   color: #fff;
   margin-top: 5px;
 }
+
 .btn-update:hover {
   background-color: #307bbe;
 }
