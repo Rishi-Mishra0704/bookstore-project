@@ -79,7 +79,7 @@ Use Terminal:
 
 cd my-folder
 
-git clone https://github.com/Rishi-Mishra0704/math-magician.git
+You will be able to clone it in some time. 
 
 ### Install
 
