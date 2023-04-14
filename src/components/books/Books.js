@@ -50,7 +50,7 @@ const Books = () => {
             <Book
               title={book.title}
               author={book.author}
-              category={book.category}
+              category={book.categories}
               onRemove={() => handleRemoveBook(book.item_id)}
             />
           </li>
@@ -61,7 +61,6 @@ const Books = () => {
 
   return (
     <div>
-      <h2>Books</h2>
       {content}
       <BooksForm onAddBook={handleAddBook} />
     </div>

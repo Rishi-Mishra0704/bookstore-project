@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,300;1,400&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0;
   height: 5rem;
+  margin-bottom: 40px;
 }
 .header-left {
   display: flex;
@@ -26,26 +28,21 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 2rem;
 }
 .ul {
   display: flex;
   list-style: none;
 }
 .Bookstore-CMS {
-  font-family: Montserrat;
   font-size: 1.875rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  font-weight: bolder;
   color: #0290ff;
 }
 
 .profile {
   font-size: 28px;
   color: #0290ff;
+  margin-right: 50px;
 }
 .ul li {
   margin: 0 20px;
