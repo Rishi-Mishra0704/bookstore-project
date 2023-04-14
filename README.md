@@ -61,7 +61,7 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
-git clone https://github.com/Rishi-Mishra0704/math-magician.git
+Coming soon. 
 ### Prerequisites
 
 In order to run this project you need:
