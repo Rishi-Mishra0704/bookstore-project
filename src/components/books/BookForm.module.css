@@ -14,7 +14,8 @@
   height: 0.125rem;
   padding-top: 40px;
 }
-.form-container{
+
+.form-container {
   width: 60%;
   background-color: #f5f6fa;
 }
@@ -25,14 +26,16 @@
   border: 1px solid #e8e8e8;
   background-color: #f5f6fa;
   font-size: 1rem;
-  letter-spacing: -.15px;
+  letter-spacing: -0.15px;
   color: #121212;
   width: 50%;
 }
-.books-form-input:focus{
-  border:1px solid #0290ff;
+
+.books-form-input:focus {
+  border: 1px solid #0290ff;
   outline: #0290ff;
 }
+
 .books-form-button {
   cursor: pointer;
   width: 20%;

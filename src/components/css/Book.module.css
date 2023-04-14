@@ -51,12 +51,14 @@ ul {
 .comment {
   margin-right: 10px;
 }
-.remove{
+
+.remove {
   border-left: 2px solid #d4d4d4;
   padding-left: 10px;
-  margin-right:10px ;
+  margin-right: 10px;
 }
-.edit{
+
+.edit {
   border-left: 2px solid #d4d4d4;
   padding-left: 10px;
 }
