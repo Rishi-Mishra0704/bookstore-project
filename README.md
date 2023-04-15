@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Math Magician</b></h3>
+  <h3><b>Bookstore CMS</b></h3>
 
 </div>
 
@@ -29,7 +29,7 @@
 
 # 📖 [Bookstore] <a name="about-project"></a>
 
-> To do list application helps you to manage your daily task effectively and let you reserve your schedule and daily plan.
+> Bookstore CMS application helps you to get the best and most famous book with a proper review and tracks your progress
 
 **[Bookstore]**
 
@@ -61,7 +61,7 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
-git clone https://github.com/Rishi-Mishra0704/math-magician.git
+Coming soon. 
 ### Prerequisites
 
 In order to run this project you need:
@@ -79,7 +79,7 @@ Use Terminal:
 
 cd my-folder
 
-git clone https://github.com/Rishi-Mishra0704/math-magician.git
+You will be able to clone it in some time. 
 
 ### Install
 
